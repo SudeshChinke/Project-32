@@ -43,7 +43,7 @@ async function getBackgroundImg(){
     hours = date.slice(11,13);
     console.log(hours);
    
-    if(hours > 04 && hours <= 05 ){
+    if(hours >= 04 && hours <= 05 ){
         bg = "sunrise1.png"
     }
     if(hours > 05 && hours <= 06 ){
@@ -73,7 +73,7 @@ async function getBackgroundImg(){
     if(hours > 19 && hours <= 21 ){
         bg = "sunset10.png"
     }
-    if(hours > 21 && hours <= 04 ){
+    if(hours > 21 && hours < 04 ){
         bg = "sunset11.png"
     }
 
